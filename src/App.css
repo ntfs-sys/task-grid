@@ -4,3 +4,16 @@ body,
     height: 100%;
     margin: 0;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 столбца одинаковой ширины */
+    grid-template-rows: 1fr 200px 1fr; /* 1 и 3 одинаковые, 2-я — ровно 200px */
+    gap: 20px;
+    width: 700px;
+    height: 400px;
+}
+
+.grid-container > div {
+    background-color: #daa520;
+}
